@@ -1,0 +1,16 @@
+{
+  "name": "node_test_env",
+  "version": "1.0.0",
+  "description": "Henlo Dere",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.1.0",
+    "cat-ascii-faces": "^2.0.0",
+    "random-game-name": "1.0.3"
+  }
+}
