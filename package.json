@@ -9,8 +9,9 @@
   "author": "Leon",
   "license": "ISC",
   "dependencies": {
-    "npm": "^6.1.0",
     "cat-ascii-faces": "^2.0.0",
+    "jsonfile": "^4.0.0",
+    "npm": "^6.1.0",
     "random-game-name": "1.0.3"
   }
 }
