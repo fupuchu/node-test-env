@@ -1,14 +1,22 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+// const path = require('path');
 
-app.get('/', function(req, res) {
-  //send file when they go
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
-app.get('/test', function(req, res) {
-  res.sendFile(path.join(__dirname + '/test.html'))
+app.use(express.static('public'))
+
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname + '/index.html'));
+// });
+
+app.post('/test', (req, res) => {
+  console.log(req.body);
+  res.send(req.body.firstInput + " " + req.body.secondInput)
 })
 
 //waiting for someone to click
